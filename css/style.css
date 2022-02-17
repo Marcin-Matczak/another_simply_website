@@ -1,0 +1,26 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Gruppo", cursive;
+  color: #1e272e;
+  background-color: #f7f1e3;
+}
+
+.container {
+  max-height: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBVUEsV0FBQTtBQUVBO0VBQ0ksc0JBQUE7QUNUSjs7QURZQTtFQUNJLFNBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSw4QkFqQlE7RUFrQlIsY0FiYztFQWNkLHlCQWpCVTtBQ1FkOztBRFlBO0VBQ0ksa0JBQUE7RUFDQSxlQUFBO0VBQ0EsY0FBQTtBQ1RKOztBRFlBO0VBQ0ksZUFBQTtBQ1RKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

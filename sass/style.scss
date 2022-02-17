@@ -7,6 +7,9 @@ $color-first: #f7f1e3;
 $color-second: #1e272e;
 $color-text-light: #f5f6fa;
 $color-text-dark: black;
+$color-neon: #ff005b;
+$color-neon-2: rgb(0, 65, 243);
+$color-neon-3: rgb(128, 3, 128);
 
 /* Global */ 
 
@@ -73,11 +76,130 @@ body {
     }
 
     a {
-        color: $color-text-light;
+        color: $color-neon;
         text-decoration: none;        
     }
 
     a:hover {
         color: $color-head;
     }
+}
+
+/* Splash */
+
+.splash {
+    background-color: $color-second;
+    color: $color-head;
+    min-height: 500px;
+    display: flex;    
+}
+
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 56px;
+  font-family: $font-head;
+  word-spacing: 20px;
+  line-height: 1.4;
+  letter-spacing: 3px;
+  color: $color-head
+}
+
+.page-subtitle {
+    margin: 24px 0;
+    font-size: 20px;
+    color: $color-text-light;
+}
+
+.neon {
+    text-shadow: 0 0 20px $color-neon;
+    animation: neon 2s linear infinite;
+}
+
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 1vw $color-neon,
+                    0 0 3vw $color-neon,
+                    0 0 4vw $color-neon,
+                    0 0 10vw $color-neon,
+                    0 0 .4vw $color-head,
+                    .5vw .5vw .1vw $color-head;
+        color: $color-head;
+    }
+    50% {
+        text-shadow: 0 0 1vw $color-neon,
+        0 0 .5vw red,
+        0 0 1.5vw red,
+        0 0 5vw red,
+        0 0 .2vw red,
+        .5vw .5vw .1vw black;
+color: $color-head;
+    }    
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: $font-text;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid; 
+    transition: 0.5s; 
+}
+
+.btn-one {
+    color:$color-neon;
+}
+
+.btn-one:hover {
+    box-shadow: 0 0 .2rem $color-first,
+            0 0 .2rem $color-first,
+            0 0 2rem $color-neon,
+            0 0 0.8rem $color-neon,
+            0 0 2.8rem $color-neon,
+            inset 0 0 1.3rem $color-neon;
+
+    color: $color-text-light;
+}
+
+.btn-two {
+    color:$color-neon-2;
+}
+
+.btn-two:hover {
+    box-shadow: 0 0 .2rem $color-first,
+            0 0 .2rem $color-first,
+            0 0 2rem $color-neon-2,
+            0 0 0.8rem $color-neon-2,
+            0 0 2.8rem $color-neon-2,
+            inset 0 0 1.3rem $color-neon-2;
+
+    color: $color-text-light;
+}
+
+.btn-three {
+    color:$color-neon-3;
+}
+
+.btn-three:hover {
+    box-shadow: 0 0 .2rem $color-first,
+            0 0 .2rem $color-first,
+            0 0 2rem $color-neon-3,
+            0 0 0.8rem $color-neon-3,
+            0 0 2.8rem $color-neon-3,
+            inset 0 0 1.3rem $color-neon-3;
+
+    color: $color-text-light;
 }

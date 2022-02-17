@@ -4,9 +4,9 @@ $font-head: 'Monoton', cursive;
 $font-text: 'Gruppo', cursive;
 $color-head: #e1b12c;
 $color-first: #f7f1e3;
-$color-second: #2f3640;
+$color-second: #1e272e;
 $color-text-light: #f5f6fa;
-$color-text-dark: #1e272e;
+$color-text-dark: black;
 
 /* Global */ 
 
@@ -31,4 +31,53 @@ body {
 
 .section {
     padding: 96px 0;
+}
+
+/* Navigation */
+
+.navigation {
+    background-color: $color-second;
+    padding: 12px 0;
+    color: $color-text-light;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 50px;
+        position: relative;
+
+        ul {            
+            margin-bottom: 12px;
+            display: block;
+            display: none;            
+            position: absolute;
+            background-color: $color-second;
+            padding: 0 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 12px;
+
+            li {                
+                margin: 0 auto;
+            }
+        }
+    }
+
+    li:hover ul{
+        display: block;
+    }
+
+    a {
+        color: $color-text-light;
+        text-decoration: none;        
+    }
+
+    a:hover {
+        color: $color-head;
+    }
 }

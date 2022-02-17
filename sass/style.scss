@@ -10,6 +10,7 @@ $color-text-dark: black;
 $color-neon: #ff005b;
 $color-neon-2: rgb(0, 65, 243);
 $color-neon-3: rgb(128, 3, 128);
+$color-neon-4: #00c200;
 
 /* Global */ 
 
@@ -171,7 +172,8 @@ color: $color-head;
             0 0 2.8rem $color-neon,
             inset 0 0 1.3rem $color-neon;
 
-    color: $color-text-light;
+            color: $color-text-light;
+            font-weight: bold;
 }
 
 .btn-two {
@@ -186,7 +188,8 @@ color: $color-head;
             0 0 2.8rem $color-neon-2,
             inset 0 0 1.3rem $color-neon-2;
 
-    color: $color-text-light;
+            color: $color-second;
+            font-weight: bold;
 }
 
 .btn-three {
@@ -201,5 +204,98 @@ color: $color-head;
             0 0 2.8rem $color-neon-3,
             inset 0 0 1.3rem $color-neon-3;
 
-    color: $color-text-light;
+            color: $color-second;
+            font-weight: bold;
 }
+
+.btn-four {
+    color:$color-neon-4;
+}
+
+.btn-four:hover {
+    box-shadow: 0 0 .2rem $color-first,
+            0 0 .2rem $color-first,
+            0 0 2rem $color-neon-4,
+            0 0 0.8rem $color-neon-4,
+            0 0 2.8rem $color-neon-4,
+            inset 0 0 1.3rem $color-neon-4;
+
+            color: $color-second;
+            font-weight: bold;
+}
+
+/* Our service */
+
+h2 {
+    font-size: 48px;
+    margin: 20px 0px 72px 50px;;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 96px 0 96px 0;
+
+    div {
+        flex: 0 0 33.333%;
+        position: relative;
+        padding: 50px;
+        z-index: 3;
+
+        p:nth-of-type(2) {
+            font-weight: bold;
+            margin-bottom: -10px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        p:first-of-type {
+            position: absolute;
+            top: -50px;
+            font-size: 40px;
+            font-weight: 400;
+            font-variant: small-caps;
+            font-family: $font-head;
+        }
+    }
+
+    .box-1::before {
+        position: absolute;
+        content: "1";
+        font-family: $font-head;
+        color: $color-head;
+        font-size: 148px;
+        line-height: 1;
+        top: -20px;
+        z-index: -1;
+    }
+
+    .box-2::before {
+        position: absolute;
+        content: "2";
+        font-family: $font-head;
+        color: $color-head;
+        font-size: 148px;
+        line-height: 1;
+        top: -20px;
+        z-index: -1;
+    }
+
+    .box-3::before {
+        position: absolute;
+        content: "3";
+        font-family: $font-head;
+        color: $color-head;
+        font-size: 148px;
+        line-height: 1;
+        top: -20px;
+        z-index: -1;
+    } 
+    
+}
+
+
+

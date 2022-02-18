@@ -349,3 +349,63 @@ h2 {
         font-weight: bold;
     }
 }
+
+/* Contact */
+
+.contact {
+    background-color: $color-second;
+    color: $color-first;
+    min-height: 500px;
+}
+
+.wrapper-3 {
+    display: flex;
+    margin: 0 96px 0 96px;
+}
+
+.form {
+    flex: 2 0 0;  
+
+    input, textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        background-color: inherit;
+        border: none;
+        border-bottom: 2px $color-head solid;
+        color: $color-text-light;
+        font-size: 16px;        
+    }
+
+    :focus {
+        border: none;
+        outline: none;
+    }
+
+    ::placeholder {
+        color: $color-head;
+        margin-bottom: 5px;
+        font-family: $font-text;
+        font-weight: bold;
+      }
+
+      a{
+          color: $color-first;
+      }
+}
+
+.card {
+    flex: 1 0 0;
+    margin-left: 96px;
+
+    h3 {
+        margin: 0;
+
+    }
+
+    p {
+        margin-top: 0;
+    }
+}
+
+

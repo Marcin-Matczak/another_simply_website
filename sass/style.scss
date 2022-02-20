@@ -394,6 +394,15 @@ h2 {
       }
 }
 
+.btn-six {
+    border: none;
+}
+
+.btn-six:hover {
+    color:$color-neon;
+}
+
+
 .card {
     flex: 1 0 0;
     margin-left: 96px;
@@ -406,6 +415,24 @@ h2 {
     p {
         margin-top: 0;
     }
+}
+
+footer {
+    background-color: $color-second;
+    text-align: center;
+
+ i {
+    font-size: 30px;
+    padding: 20px;
+    color: $color-head;
+    margin: 20px 15px 20px 15px;
+    transition: all 1s;
+ }
+}
+
+footer i:hover {
+    transform: scale(1.2);
+    color:$color-neon;
 }
 
 
